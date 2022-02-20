@@ -2,7 +2,7 @@ package ss1_introduction_to_java.ss1_introduction_to_java_thuchanh;
 
 import java.util.Scanner;
 
-public class Liner_equaction {
+public class LinerEquaction {
     public static void main(String[] args) {
         System.out.println("linear Equation Resolvers");
         System.out.println("given a equation as 'a * x + b = c', please enter constants: ");
