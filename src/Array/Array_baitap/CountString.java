@@ -12,8 +12,9 @@ public class CountString {
         char character = input.nextLine().charAt(0);
         int count = 0;
 
-        for(int i=1;i<s.length();i++) {
-            if(s.charAt(i) == character) count+=1;
+        for(int i=0;i<s.length();i++) {
+            if(s.charAt(i) == character)
+                count+=1;
         }
         System.out.printf("%s appears %d time",character,count);
     }
