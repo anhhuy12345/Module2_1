@@ -1,19 +1,30 @@
 package ss3_oop.baitap;
 
-import java.sql.Time;
-import java.util.Scanner;
+import java.util.Date;
 
 public class StopWatch {
-    private double startTime;
-    private double EndTime;
-    public StopWatch(){
+    private Date startTime;
+    private Date endTime;
+
+    StopWatch() {
+        this.startTime = new Date();
     }
-    public StopWatch(double startTime, double EndTime){
-        this.startTime = startTime;
-        this.EndTime = EndTime;
+
+    public Date getStartTime() {
+        return startTime;
     }
-    public double getStartTime(){
-        getStartTime() = new 
-        System.out.println( );
+
+    public Date getEndTime() {
+        this.endTime = new Date();
+        return endTime;
+    }
+
+    public void start(Date now) {
+        this.startTime = now;
+    }
+
+    public long getElapsedTime(Date start, Date end) {
+        long elapsedTime = end.getTime() - start.getTime();
+        return elapsedTime;
     }
 }
