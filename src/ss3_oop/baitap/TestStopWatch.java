@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Tgit estStopWatch {
+public class TestStopWatch {
     public static void main(String[] args) {
         StopWatch obj = new StopWatch();
         Scanner input = new Scanner(System.in);

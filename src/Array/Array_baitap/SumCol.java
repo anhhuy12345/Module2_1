@@ -15,7 +15,6 @@ public class SumCol {
         int colNo = input.nextInt();
         sumColumn(array,colNo);
 
-
         System.out.println("Input row");
         int row = input.nextInt();
         System.out.println("Input col");
@@ -30,7 +29,7 @@ public class SumCol {
         }
         System.out.println("Input column to calculate");
         int colNo2 = input.nextInt();
-        sumColumn(array2,colNo2);
+        SumCol.sumColumn(array2,colNo2);
     }
 
     static void sumColumn(int[][] array,int col) {

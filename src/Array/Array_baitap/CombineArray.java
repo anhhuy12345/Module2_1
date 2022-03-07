@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class CombineArray {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
-        //Input size and elements of array A
         System.out.println("Input size of array A");
         int sizeA = input.nextInt();
         int[] arrayA = new int[sizeA];
@@ -16,7 +14,6 @@ public class CombineArray {
             System.out.println("Input element at " + i);
             arrayA[i] = input.nextInt();
         }
-
         System.out.println("Input size of array B");
         int sizeB = input.nextInt();
         int[] arrayB = new int[sizeB];
@@ -25,10 +22,10 @@ public class CombineArray {
             System.out.println("Input element at " + i);
             arrayB[i] = input.nextInt();
         }
-
         System.out.println("Array A: " + Arrays.toString(arrayA));
         System.out.println("Array B: " + Arrays.toString(arrayB));
 
+        //Combine to arrayC
         int[] arrayC = new int[sizeA+sizeB];
         for(int i = 0; i<arrayC.length-sizeB;i++) {
             arrayC[i] = arrayA[i];
@@ -38,6 +35,6 @@ public class CombineArray {
         for(int i = 0; i<sizeB;i++) {
             arrayC[arrayA.length+i] = arrayB[i];
         }
-        System.out.println("Finished: "+ Arrays.toString(arrayC));
+        System.out.println("Finished: "+Arrays.toString(arrayC));
     }
 }
