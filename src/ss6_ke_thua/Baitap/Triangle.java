@@ -51,3 +51,4 @@ public class Triangle extends Shape {
     @Override
     public String toString() {
         return "A Triangle with side are " + side1 + ", " + side2 + ", " + side3 + " is subclass of " + super.toString();
+    }
