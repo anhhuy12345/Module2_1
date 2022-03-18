@@ -1,6 +1,6 @@
 package Abstract_Interface.thuchanh;
 
-public class Chicken extends Abstract_Interface.thuchanh.Animal implements Abstract_Interface.thuchanh.Edible {
+public class Chicken extends Abstract_Interface.thuchanh.Animal {
     @Override
     public String makeSound() {
         return "Cluck";

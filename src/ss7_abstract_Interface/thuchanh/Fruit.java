@@ -1,6 +1,6 @@
 package Abstract_Interface.thuchanh;
 
-import edible.Edible;
+
 
 public abstract class Fruit implements Abstract_Interface.thuchanh.Edible {
     private String type;
@@ -24,8 +24,9 @@ public abstract class Fruit implements Abstract_Interface.thuchanh.Edible {
 
     public String getColor() {
         return color;
-
-    public void setColor(String color) {
-        this.color = color;
     }
+
+        public void setColor (String color){
+            this.color = color;
+        }
 }

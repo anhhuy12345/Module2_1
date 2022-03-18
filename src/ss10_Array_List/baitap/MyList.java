@@ -3,8 +3,8 @@ package ss10_Array_List.baitap;
 import java.util.Arrays;
 
 public class MyList<E> {
-    private int size = 0;
-    private static final int DEFAUL_CAPACITY = 10;
+    public int size = 0;
+    public static final int DEFAUL_CAPACITY = 10;
     private Object elements[];
 
     public MyList() {
@@ -20,17 +20,17 @@ public class MyList<E> {
 
     }
 
-    private int size(){
+    public int size(){
         return this.size;
     }
-    private void clear(){
+    public void clear(){
         size = 0;
-        if(int i = 0,i < elements.length,i++){
+        for(int i = 0;i<elements.length;i++){
             elements[i] = null;
         }
     }
 
-    private boolean add(E element){
+    public boolean add(E element){
         if(elements.length == size){
             this.ensureCapacity(5);
         }
@@ -39,9 +39,9 @@ public class MyList<E> {
         return true;
     }
 
-    private boolean add(E element,int index){
+    public boolean add(E element,int index){
         if(index > elements.length){
-            throw new IllegalArgumentException("index" + index)
+            throw new IllegalArgumentException("index" + index);
         }else if(elements.length == size){
             this.ensureCapacity(5);
         }
@@ -50,14 +50,14 @@ public class MyList<E> {
             size++;
         }else {
             for(int i = size+1;i>=index;i--){
-                elements[i] = elements[i-1],
+                elements[i] = elements[i-1];
             }
             elements[index] = element;
             size++;
         }
     }
 
-    private void ensureCapacity(int mincapacity){
+    public void ensureCapacity(int mincapacity){
         if(mincapacity >= 0){
             int newSize = elements.length + mincapacity;
             elements = Arrays.copyOf(elements,newSize);
@@ -65,8 +65,5 @@ public class MyList<E> {
             throw new IllegalArgumentException("mincapacity" + mincapacity);
         }
     }
-
-
-
 
 }

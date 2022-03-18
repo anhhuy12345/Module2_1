@@ -1,6 +1,6 @@
 package Abstract_Interface.baitap;
 
-public class Square extends Shape implements Resizeable, Colorable{
+public class Square extends Abstract_Interface.baitap.Shape implements Abstract_Interface.baitap.Resizeable, Abstract_Interface.baitap.Colorable {
     private double size = 5;
 
     public Square() {}

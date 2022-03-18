@@ -1,6 +1,6 @@
 package Ke_thua.Baitap;
 
-public class Cylinder extends Circle {
+public class Cylinder extends Ke_thua.Baitap.Circle {
     private double height;
 
     public Cylinder() {
@@ -8,22 +8,24 @@ public class Cylinder extends Circle {
     }
 
     public Cylinder(double radius, String color, double height) {
-        super(radius,color);
+        super(radius, color);
         this.height = height;
     }
 
     public double getHeight() {
         return height;
     }
+
     public void setHeight(double height) {
         this.height = height;
     }
 
     public double getVolume() {
-        return Math.PI*getRadius()*2*height;
+        return Math.PI * getRadius() * 2 * height;
     }
 
     @Override
     public String toString() {
-        return "A Cylinder with volume = " + getVolume() + " is subclass of " + super.toString();
+        return "A Cylinder with volume = " + getVolume() + "is subclass of " + super.toString();
     }
+}

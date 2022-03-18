@@ -1,24 +1,27 @@
-package Abstract_Interface.thuchanh;
+package ss7_abstract_Interface.thuchanh;
 
-    public class AbstractAndInterfaceTest {
+import sun.font.FontRunIterator;
+
+public class AbstractAndInterfaceTest {
         public static void main(String[] args) {
-            Animal[] animals = new Animal[2];
-            animals[0] = new Tiger();
-            animals[1] = new Chicken();
+             Abstract_Interface.thuchanh.Animal[] animals = new Abstract_Interface.thuchanh.Animal[2];
+            animals[0] = new Abstract_Interface.thuchanh.Tiger();
+            animals[1] = new Abstract_Interface.thuchanh.Chicken();
 
-            for (Animal animal : animals) {
+            for (Abstract_Interface.thuchanh.Animal animal : animals) {
                 System.out.println(animal.makeSound());
 
-                if (animal instanceof Chicken) {
-                    System.out.println(((Chicken) animal).howToEat());
+                if (animal instanceof Abstract_Interface.thuchanh.Chicken) {
+                    System.out.println(((Abstract_Interface.thuchanh.Chicken) animal).howToEat());
                 }
             }
 
-            Fruit[] fruits = new Fruit[2];
-            fruits[0] = new Orange();
-            fruits[1] = new Apple();
+            Abstract_Interface.thuchanh.Fruit[] fruits = new Abstract_Interface.thuchanh.Fruit[2];
+            fruits[0] = new Abstract_Interface.thuchanh.Orange();
+            fruits[1] = new Abstract_Interface.thuchanh.Apple(
+            );
 
-            for (Fruit fruit : fruits) {
+            for (Abstract_Interface.thuchanh.Fruit fruit : fruits) {
                 System.out.println(fruit.howToEat());
             }
         }

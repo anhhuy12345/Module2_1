@@ -1,6 +1,6 @@
 package Abstract_Interface.baitap;
 
-public class Rectangle extends Shape implements Resizeable{
+public class Rectangle extends Abstract_Interface.baitap.Shape implements Abstract_Interface.baitap.Resizeable {
     private double width = 2.0;
     private double height = 5.0;
 

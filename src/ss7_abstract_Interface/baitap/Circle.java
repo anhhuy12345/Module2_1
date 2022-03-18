@@ -1,6 +1,6 @@
 package Abstract_Interface.baitap;
 
-public class Circle extends Shape implements Resizeable{
+public class Circle extends Abstract_Interface.baitap.Shape implements Abstract_Interface.baitap.Resizeable {
     private double radius = 2.0;
 
     public Circle() {}
